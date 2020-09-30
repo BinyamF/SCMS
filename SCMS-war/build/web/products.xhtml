@@ -1,0 +1,317 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+
+        <title>Stock Counter System</title>
+
+        <h:outputStylesheet library="css" name="bootstrap.min.css" />                     
+        <h:outputStylesheet library="font-awesome/css" name="font-awesome.css" />
+        <h:outputStylesheet library="font-awesome/css" name="font-awesome.min.css"  />
+        <h:outputStylesheet library="css" name="sb-admin.css" />
+
+
+    </h:head>
+
+    <body>
+
+        <div id="wrapper">
+
+            <!-- Navigation -->
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Stock Counter</a>
+                </div>
+                <!-- Top Menu Items -->
+                <ul class="nav navbar-right top-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                        <ul class="dropdown-menu message-dropdown">
+                            <li class="message-preview">
+                                <a href="#">
+                                    <div class="media">
+                                        <span class="pull-left">
+                                            <img class="media-object" src="http://placehold.it/50x50" alt=""/>
+                                        </span>
+                                        <div class="media-body">
+                                            <h5 class="media-heading"><strong>John Smith</strong>
+                                            </h5>
+                                            <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="message-preview">
+                                <a href="#">
+                                    <div class="media">
+                                        <span class="pull-left">
+                                            <img class="media-object" src="http://placehold.it/50x50" alt=""/>
+                                        </span>
+                                        <div class="media-body">
+                                            <h5 class="media-heading"><strong>John Smith</strong>
+                                            </h5>
+                                            <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="message-preview">
+                                <a href="#">
+                                    <div class="media">
+                                        <span class="pull-left">
+                                            <img class="media-object" src="http://placehold.it/50x50" alt=""/>
+                                        </span>
+                                        <div class="media-body">
+                                            <h5 class="media-heading"><strong>John Smith</strong>
+                                            </h5>
+                                            <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="message-footer">
+                                <a href="#">Read All New Messages</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                        <ul class="dropdown-menu alert-dropdown">
+                            <li>
+                                <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">View All</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav side-nav">
+                        <li>
+                            <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                        </li>
+                        <li>                            
+                            <a href="itemType.xhtml"><i class="fa fa-fw fa-edit"></i> Item Type</a>
+                        </li>
+                        <li>                            
+                            <a href="goodsreceived.xhtml"><i class="fa fa-fw fa-edit"></i>  Goods Received Note</a>
+                        </li>                        
+                        <li>                            
+                            <a href="storeissue.xhtml"><i class="fa fa-fw fa-edit"></i> Store Issue</a>
+                        </li>
+                        <li>                            
+                            <a href="products.xhtml"><i class="fa fa-fw fa-edit"></i> Products</a>
+                        </li>
+                        <li>                            
+                            <a href="nonfiscalrec.xhtml"><i class="fa fa-fw fa-edit"></i> Non Fiscal Receipt</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+
+            <div id="page-wrapper">
+
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="row">
+                        <div class="col-lg-12" style="padding-bottom: 10px;">
+                            <h3 class=" breadcrumb page-header">
+                                Product Setup
+                            </h3>                           
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                    <!--<p:inputText id="productName" value="{productscontroller.prodcts.productName}" title="ProductName" required="true" requiredMessage="The ProductName field is required."/>-->
+
+
+
+
+                    <div class="row">
+                        <div class="col-lg-12" style="padding-bottom: 10px;">                            
+                            <div class="col-lg-6"> 
+                                <f:view>
+                                    <h:form id="formsearch">
+                                        <p:selectOneMenu id="pname" value="#{productscontroller.products.idproducts}" 
+                                                         required="true" requiredMessage="The Productid field is required."
+                                                         valueChangeListener="#{productscontroller.fetchProductInfo}" effect="fade" style="width:170px" 
+                                                         filter="true" filterMatchMode="startsWith">
+                                            <f:selectItem itemLabel="Select One" itemValue=" " />
+                                            <f:selectItems value="#{productscontroller.findProducts()}" var="prodlist" itemLabel="#{prodlist}" 
+                                                           itemValue="#{prodlist.idproducts}"/>
+                                            <p:ajax event="change" process="@this" update="@(form)" />
+                                        </p:selectOneMenu>
+                                    </h:form>
+                                </f:view>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12" style="padding-bottom: 10px;">                            
+
+
+                            <f:view>
+                                <h:form id="form1">
+                                    <p:growl id="growl" showDetail="true" sticky="false" severity="fatal" /> 
+                                    <p:panelGrid columns="4">
+                                        <p:outputLabel value="ProductName:" for="productName" />
+                                        <p:inputText id="productName" value="#{productscontroller.products.productName}" title="ProductName" required="true" requiredMessage="The ProductName field is required."/>
+                                        <p:outputLabel value="ProductPrice:" for="productPrice" />
+                                        <p:inputText id="productPrice" value="#{productscontroller.products.productPrice}" title="ProductPrice" required="true" requiredMessage="The ProductPrice field is required."/>
+
+                                        <p:outputLabel value="Itemtypeid:" for="itemtypeid" />
+                                        <p:selectOneMenu id="itemtypeid" value="#{productscontroller.itemType.iditemType}" required="true" requiredMessage="The Itemtypeid field is required."
+                                                         valueChangeListener="#{productscontroller.fetchItemInfo}" effect="fade" style="width:170px" 
+                                                         filter="true" filterMatchMode="startsWith">
+                                            <f:selectItem itemLabel="Select One" itemValue="" />
+                                            <f:selectItems value="#{productscontroller.findItem()}" var="itemlist" itemLabel="#{itemlist}" 
+                                                           itemValue="#{itemlist.iditemType}"/>
+                                            <p:ajax event="change" process="@this" update="@this,unit,amount" />
+                                        </p:selectOneMenu>
+                                        <p:outputLabel value="Unit:" for="unit" />
+                                        <p:inputText id="unit" value="#{productscontroller.itemType.unit}" title="Unit" readonly="true"/>
+                                        <p:outputLabel value="Amount:" for="amount" />
+                                        <p:inputText id="amount" value="#{productscontroller.ingredients.amount}" title="Amount" required="true" requiredMessage="The Amount field is required."/>
+
+                                    </p:panelGrid>
+                                    <div class="col-lg-2" style="padding: 15px;">
+                                        <p:commandButton id="adder" value="Add" class="btn btn-block btn-primary" 
+                                                         action="#{productscontroller.checkDuplication()}" 
+                                                         process="@this,:form1" update="@this,form1,:form2:ingredientTable"/>
+                                    </div>
+                                </h:form>
+                            </f:view>                                                               
+
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12" style="padding-bottom: 10px;">
+                                <ol class="breadcrumb">
+                                    <li>
+                                        <h4>Ingredients List</h4>
+                                    </li>
+                                </ol>
+                                <f:view>
+                                    <h:form id="form2" class="col-lg-8" style="padding-bottom: 10px;">
+                                        
+                                        <p:growl id="growl" showDetail="true" sticky="false" />
+                                        
+                                        <p:dataTable id="ingredientTable" value="#{productscontroller.ingredientsDataModel}" var="item"
+                                                     rowIndexVar="num" paginator="true" paginatorPosition="bottom" rowKey="#{item.itemtypeid}"
+                                                     selection="#{productscontroller.selectedIngredient}" selectionMode="single" >
+                                            <p:ajax event="rowSelect" listener="#{productscontroller.populate}"
+                                                    process="@this" update="@this,:form1"/>
+                                            <p:column>
+                                                <f:facet name="header">
+                                                    <h:outputText value="No."/>
+                                                </f:facet>
+                                                <h:outputText value="#{num+1}"/>
+                                            </p:column>
+                                            <p:column>
+                                                <f:facet name="header">
+                                                    <h:outputText value="Item"/>
+                                                </f:facet>
+                                                <h:outputText value="#{item.itemtypeid.itemType}"/>
+                                            </p:column>
+                                            <p:column>
+                                                <f:facet name="header">
+                                                    <h:outputText value="Amount"/>
+                                                </f:facet>
+                                                <h:outputText value="#{item.amount}"/>
+                                            </p:column>
+                                        </p:dataTable>
+                                        <div class="col-lg-3" style="padding: 15px;">
+                                            <p:commandButton id="saver" value="Save" class="btn btn-block btn-primary" 
+                                                             action="#{productscontroller.create}" process="@this,:form1" update="@this,:form1,:form2"/>
+                                        </div>
+                                    </h:form>
+                                </f:view>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.container-fluid -->
+
+                    <div class="row" style="height: 200px">
+                        <div class="col-lg-12" style="padding-bottom: 10px;">
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- /#page-wrapper -->
+
+            </div>
+        </div>
+        <!-- /#wrapper -->
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+    </body>
+</html>
+
+
